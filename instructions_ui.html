@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero-Token Pipeline Instructions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #a855f7;
+            --bg-dark: #030712;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text: #f3f4f6;
+            --text-dim: #9ca3af;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: radial-gradient(circle at top left, #1e1b4b 0%, #030712 50%);
+        }
+
+        /* Floating Info Button */
+        .info-button {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 100;
+        }
+
+        .info-button:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .info-button svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+
+        /* Hover Popup Window */
+        .instruction-panel {
+            position: fixed;
+            bottom: 110px;
+            right: 40px;
+            width: 380px;
+            padding: 30px;
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px) scale(0.95);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            pointer-events: none;
+        }
+
+        /* Show on Hover */
+        .container:hover .instruction-panel {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+            pointer-events: all;
+        }
+
+        /* Header Style */
+        .instruction-panel h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Step List */
+        .steps {
+            list-style: none;
+        }
+
+        .step {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        .step:nth-child(1) { animation-delay: 0.1s; }
+        .step:nth-child(2) { animation-delay: 0.2s; }
+        .step:nth-child(3) { animation-delay: 0.3s; }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+            color: #fff;
+        }
+
+        .step-content p {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            line-height: 1.5;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 8px;
+            background: rgba(168, 85, 247, 0.15);
+            color: var(--secondary);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Decorative background elements */
+        .ambient-light {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+            top: -200px;
+            left: -200px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="ambient-light"></div>
+    
+    <!-- Using a container to handle the hover for both button and panel -->
+    <div class="container">
+        <div class="instruction-panel">
+            <h1>Pipeline Control</h1>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Prepare Renders</h3>
+                        <p>Generate your clips in ComfyUI or SVD. Save them to your output folder.</p>
+                        <span class="badge">Local AI</span>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Launch Bridge</h3>
+                        <p>Run <code>start_local_pipeline.bat</code> to start the watcher and poster.</p>
+                        <span class="badge">Automation</span>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Go Viral</h3>
+                        <p>Videos are automatically scaled, logo-injected, and posted to your socials.</p>
+                        <span class="badge">Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-button">
+            <svg viewBox="0 0 24 24">
+                <path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 3.59 3.59 8 8-3.59 3.59-8 8z"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

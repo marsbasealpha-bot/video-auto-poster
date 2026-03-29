@@ -1,0 +1,390 @@
+
+[2026-03-03 17:26:09] === Window starting ===
+[2026-03-03 17:26:10] Drag-and-drop hooked successfully
+[2026-03-03 17:26:12] DROP received: 1 file(s)
+[2026-03-03 17:26:12] _handle_dropped_files START: 1 file(s)
+[2026-03-03 17:26:12]   Path: C:\Users\Admin\Desktop\GavinDSLkneepads.mp4
+[2026-03-03 17:26:12]   Extension: .mp4
+[2026-03-03 17:26:12]   Added to queue
+[2026-03-03 17:26:12] _handle_dropped_files: 1 added
+[2026-03-03 17:26:12] WORKER START: 1 video(s) in queue
+[2026-03-03 17:26:12] _handle_dropped_files END
+[2026-03-03 17:26:12] WORKER processing: GavinDSLkneepads.mp4
+[2026-03-03 17:26:12] WORKER copying C:\Users\Admin\Desktop\GavinDSLkneepads.mp4 -> D:\Video Auto-Poster\GavinDSLkneepads.mp4
+[2026-03-03 17:26:12] WORKER copy OK
+[2026-03-03 17:26:12] PIPELINE START for GavinDSLkneepads.mp4
+[2026-03-03 17:26:16] PIPELINE imports OK
+[2026-03-03 17:26:19] PIPELINE analysis OK: title=Wait until you see what happens next
+[2026-03-03 17:26:39] PIPELINE processing OK: D:\Video Auto-Poster\PROCESSED_Wait until you see what happens next #viral #trending #mustwatch #fyp #share.mp4
+[2026-03-03 17:26:39] PIPELINE upload OK
+[2026-03-03 17:26:39] PIPELINE moved to: D:\Video Auto-Poster\processed\Wait until you see what happens next #viral #trending #mustwatch #fyp #share.mp4
+[2026-03-03 17:26:39] WORKER DONE
+[2026-03-03 17:36:43] === Window starting ===
+[2026-03-03 17:36:43] Drag-and-drop hooked successfully
+[2026-03-03 17:36:47] DROP received: 1 file(s)
+[2026-03-03 17:36:47] _handle_dropped_files START: 1 file(s)
+[2026-03-03 17:36:47]   Path: C:\Users\Admin\Desktop\GavinDSLkneepads.mp4
+[2026-03-03 17:36:47]   Extension: .mp4
+[2026-03-03 17:36:47]   Added to queue
+[2026-03-03 17:36:47] _handle_dropped_files: 1 added
+[2026-03-03 17:36:47] WORKER START: 1 video(s) in queue
+[2026-03-03 17:36:47] _handle_dropped_files END
+[2026-03-03 17:36:47] WORKER processing: GavinDSLkneepads.mp4
+[2026-03-03 17:36:47] WORKER copying C:\Users\Admin\Desktop\GavinDSLkneepads.mp4 -> D:\Video Auto-Poster\GavinDSLkneepads.mp4
+[2026-03-03 17:36:47] WORKER copy OK
+[2026-03-03 17:36:47] PIPELINE START for GavinDSLkneepads.mp4
+[2026-03-03 17:36:49] PIPELINE imports OK
+[2026-03-03 17:36:52] PIPELINE analysis OK: title=Wait until you see what happens next
+[2026-03-03 17:37:12] PIPELINE processing OK: D:\Video Auto-Poster\PROCESSED_Wait until you see what happens next #viral #trending #mustwatch #fyp #share.mp4
+[2026-03-03 17:37:12] PIPELINE upload OK
+[2026-03-03 17:37:12] PIPELINE moved to: D:\Video Auto-Poster\processed\Wait until you see what happens next #viral #trending #mustwatch #fyp #share.mp4
+[2026-03-03 17:37:12] WORKER DONE
+[2026-03-03 19:18:03] === Window starting ===
+[2026-03-03 19:18:03] Drag-and-drop hooked successfully
+[2026-03-06 10:58:22] ANALYZER_GUI: Analysis failed: Traceback (most recent call last):
+  File "C:\Users\Admin\.gemini\antigravity\scratch\video-auto-poster\analyzer_gui.pyw", line 275, in _analyze_worker
+    result = analyze_media(self.selected_file)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\.gemini\antigravity\scratch\video-auto-poster\analyzer.py", line 59, in analyze_media
+    raise ValueError(f"Unsupported file type: {ext}")
+ValueError: Unsupported file type: .pdf
+
+[2026-03-06 19:22:19] ANALYZER_GUI: Analysis failed: Traceback (most recent call last):
+  File "C:\Users\Admin\.gemini\antigravity\scratch\video-auto-poster\analyzer_gui.pyw", line 283, in _analyze_worker
+    result = analyze_media(self.selected_file)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\.gemini\antigravity\scratch\video-auto-poster\analyzer.py", line 59, in analyze_media
+    raise ValueError(f"Unsupported file type: {ext}")
+ValueError: Unsupported file type: .pdf
+
+[2026-03-09 00:24:57] ANALYZER_GUI: Analysis failed: Traceback (most recent call last):
+  File "D:\Lib\shutil.py", line 847, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Admin\\Desktop\\This man is sick, every night he sticks his finger up my rea.mp4' -> 'D:\\Video Auto-Poster\\analyzed\\This man is sick, every night he sticks his finger up my rea\\This man is sick, every night he sticks his finger up my rea.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\.gemini\antigravity\scratch\video-auto-poster\analyzer_gui.pyw", line 283, in _analyze_worker
+    result = analyze_media(self.selected_file)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\.gemini\antigravity\scratch\video-auto-poster\analyzer.py", line 125, in analyze_media
+    shutil.move(file_path, output_path)
+  File "D:\Lib\shutil.py", line 867, in move
+    copy_function(src, real_dst)
+  File "D:\Lib\shutil.py", line 460, in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+[2026-03-13 10:16:25] === Window starting ===
+[2026-03-13 10:16:26] Drag-and-drop hooked successfully
+[2026-03-13 10:17:00] DROP received: 1 file(s)
+[2026-03-13 10:17:00] _handle_dropped_files START: 1 file(s)
+[2026-03-13 10:17:00]   Path: C:\Users\Admin\Downloads\ezgif.com-speed.gif
+[2026-03-13 10:17:00]   Extension: .gif
+[2026-03-13 10:17:00]   Skipped non-video
+[2026-03-13 10:17:00] _handle_dropped_files: 0 added
+[2026-03-13 10:17:00] _handle_dropped_files END
+[2026-03-13 13:02:48] === Window starting ===
+[2026-03-13 13:02:49] Drag-and-drop hooked successfully
+[2026-03-13 13:20:44] DROP received: 1 file(s)
+[2026-03-13 13:20:44] _handle_dropped_files START: 1 file(s)
+[2026-03-13 13:20:44]   Path: C:\Users\Admin\Desktop\grok video\Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 13:20:45]   Extension: .mp4
+[2026-03-13 13:20:45]   Added to queue
+[2026-03-13 13:20:45] _handle_dropped_files: 1 added
+[2026-03-13 13:20:45] WORKER START: 1 video(s) in queue
+[2026-03-13 13:20:45] _handle_dropped_files END
+[2026-03-13 13:20:45] WORKER processing: Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 13:20:45] WORKER copying C:\Users\Admin\Desktop\grok video\Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4 -> C:\Users\Admin\Desktop\video-auto-poster\Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 13:20:45] WORKER copy OK
+[2026-03-13 13:20:45] PIPELINE START for Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 13:20:50] PIPELINE imports OK
+[2026-03-13 13:21:27] PIPELINE processing OK: C:\Users\Admin\Desktop\video-auto-poster\PROCESSED_Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 13:21:32] PIPELINE upload OK
+[2026-03-13 13:21:32] PIPELINE moved to: C:\Users\Admin\Desktop\video-auto-poster\analyzed\Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 13:21:32] WORKER DONE
+[2026-03-13 15:20:56] DROP received: 1 file(s)
+[2026-03-13 15:20:56] _handle_dropped_files START: 1 file(s)
+[2026-03-13 15:20:56]   Path: C:\Users\Admin\Desktop\grok video\Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 15:20:56]   Extension: .mp4
+[2026-03-13 15:20:56]   Added to queue
+[2026-03-13 15:20:56] _handle_dropped_files: 1 added
+[2026-03-13 15:20:56] WORKER START: 1 video(s) in queue
+[2026-03-13 15:20:56] _handle_dropped_files END
+[2026-03-13 15:20:56] WORKER processing: Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 15:20:56] WORKER copying C:\Users\Admin\Desktop\grok video\Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4 -> C:\Users\Admin\Desktop\video-auto-poster\Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 15:20:56] WORKER copy OK
+[2026-03-13 15:20:56] PIPELINE START for Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 15:20:56] PIPELINE imports OK
+[2026-03-13 15:21:32] PIPELINE processing OK: C:\Users\Admin\Desktop\video-auto-poster\PROCESSED_Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 15:21:32] PIPELINE upload OK
+[2026-03-13 15:21:32] PIPELINE moved to: C:\Users\Admin\Desktop\video-auto-poster\analyzed\Untitled 16-2026-03-06 14 13 41(copy)-2026-03-07 15 54 05(copy).mp4
+[2026-03-13 15:21:32] WORKER DONE
+[2026-03-13 17:33:38] DROP received: 1 file(s)
+[2026-03-13 17:33:38] _handle_dropped_files START: 1 file(s)
+[2026-03-13 17:33:38]   Path: C:\Users\Admin\Desktop\Former CIA officer talking about ADRENOCHROME.mp4
+[2026-03-13 17:33:38]   Extension: .mp4
+[2026-03-13 17:33:38]   Added to queue
+[2026-03-13 17:33:38] _handle_dropped_files: 1 added
+[2026-03-13 17:33:38] _handle_dropped_files END
+[2026-03-13 17:33:38] WORKER START: 1 video(s) in queue
+[2026-03-13 17:33:38] WORKER processing: Former CIA officer talking about ADRENOCHROME.mp4
+[2026-03-13 17:33:38] WORKER copying C:\Users\Admin\Desktop\Former CIA officer talking about ADRENOCHROME.mp4 -> C:\Users\Admin\Desktop\video-auto-poster\Former CIA officer talking about ADRENOCHROME.mp4
+[2026-03-13 17:33:38] WORKER copy OK
+[2026-03-13 17:33:38] PIPELINE START for Former CIA officer talking about ADRENOCHROME.mp4
+[2026-03-13 17:33:39] PIPELINE imports OK
+[2026-03-13 17:34:03] PIPELINE processing OK: C:\Users\Admin\Desktop\video-auto-poster\PROCESSED_Former CIA officer talking about ADRENOCHROME.mp4
+[2026-03-13 17:34:05] PIPELINE upload OK
+[2026-03-13 17:34:05] PIPELINE moved to: C:\Users\Admin\Desktop\video-auto-poster\analyzed\Former CIA officer talking about ADRENOCHROME.mp4
+[2026-03-13 17:34:05] WORKER DONE
+[2026-03-29 19:31:51] === Window starting ===
+[2026-03-29 19:31:52] Drag-and-drop hooked successfully
+[2026-03-29 19:32:11] === Window starting ===
+[2026-03-29 19:32:11] Drag-and-drop hooked successfully
+[2026-03-29 19:32:20] === Window starting ===
+[2026-03-29 19:32:20] Drag-and-drop hooked successfully
+[2026-03-29 19:32:41] === Window starting ===
+[2026-03-29 19:32:41] Drag-and-drop hooked successfully
+[2026-03-29 19:34:33] DROP received: 1 file(s)
+[2026-03-29 19:34:33] _handle_dropped_files START: 1 file(s)
+[2026-03-29 19:34:33]   Path: C:\Users\Admin\Desktop\video-auto-poster\Celebraty Death Match.mp4
+[2026-03-29 19:34:33]   Extension: .mp4
+[2026-03-29 19:34:33]   Added to queue
+[2026-03-29 19:34:33] _handle_dropped_files: 1 added
+[2026-03-29 19:34:33] _handle_dropped_files END
+[2026-03-29 19:59:27] === Window starting ===
+[2026-03-29 19:59:27] Drag-and-drop hooked successfully
+[2026-03-29 19:59:27] FATAL:
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\watch_window.pyw", line 693, in <module>
+    app = WatchWindow()
+          ^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\watch_window.pyw", line 325, in __init__
+    cursor="hand2", command=self._stop
+                            ^^^^^^^^^^
+  File "D:\Lib\tkinter\__init__.py", line 2433, in __getattr__
+    return getattr(self.tk, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_tkinter.tkapp' object has no attribute '_stop'
+
+[2026-03-29 20:01:30] === Window starting ===
+[2026-03-29 20:01:31] Drag-and-drop hooked successfully
+[2026-03-29 20:01:31] FATAL:
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\watch_window.pyw", line 693, in <module>
+    app = WatchWindow()
+          ^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\watch_window.pyw", line 325, in __init__
+    cursor="hand2", command=self._stop
+                            ^^^^^^^^^^
+  File "D:\Lib\tkinter\__init__.py", line 2433, in __getattr__
+    return getattr(self.tk, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_tkinter.tkapp' object has no attribute '_stop'
+
+[2026-03-29 20:05:54] === Window starting ===
+[2026-03-29 20:05:54] Drag-and-drop hooked successfully
+[2026-03-29 20:05:54] FATAL:
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\watch_window.pyw", line 693, in <module>
+    app = WatchWindow()
+          ^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\watch_window.pyw", line 325, in __init__
+    cursor="hand2", command=self._stop
+                            ^^^^^^^^^^
+  File "D:\Lib\tkinter\__init__.py", line 2433, in __getattr__
+    return getattr(self.tk, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_tkinter.tkapp' object has no attribute '_stop'
+
+[2026-03-29 20:06:02] === Window starting ===
+[2026-03-29 20:06:02] Drag-and-drop hooked successfully
+[2026-03-29 20:06:02] FATAL:
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\watch_window.pyw", line 693, in <module>
+    app = WatchWindow()
+          ^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\watch_window.pyw", line 325, in __init__
+    cursor="hand2", command=self._stop
+                            ^^^^^^^^^^
+  File "D:\Lib\tkinter\__init__.py", line 2433, in __getattr__
+    return getattr(self.tk, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_tkinter.tkapp' object has no attribute '_stop'
+
+[2026-03-29 20:07:11] === Window starting ===
+[2026-03-29 20:07:11] Drag-and-drop hooked successfully
+[2026-03-29 20:08:21] DROP received: 1 file(s)
+[2026-03-29 20:08:21] _handle_dropped_files START: 1 file(s)
+[2026-03-29 20:08:21]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 20:08:21]   Extension: .mp4
+[2026-03-29 20:08:21]   Added to queue
+[2026-03-29 20:08:21] _handle_dropped_files: 1 added
+[2026-03-29 20:08:21] _handle_dropped_files END
+[2026-03-29 20:18:04] DROP received: 1 file(s)
+[2026-03-29 20:18:04] _handle_dropped_files START: 1 file(s)
+[2026-03-29 20:18:04]   Path: C:\Users\Admin\Desktop\video-auto-poster\2of10 Hopi Wisdom.mp4
+[2026-03-29 20:18:04]   Extension: .mp4
+[2026-03-29 20:18:04]   Added to queue
+[2026-03-29 20:18:04] _handle_dropped_files: 1 added
+[2026-03-29 20:18:04] _handle_dropped_files END
+[2026-03-29 20:30:10] === Window starting ===
+[2026-03-29 20:30:10] Drag-and-drop hooked successfully
+[2026-03-29 20:30:18] DROP received: 1 file(s)
+[2026-03-29 20:30:18] _handle_dropped_files START: 1 file(s)
+[2026-03-29 20:30:18]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 20:30:18]   Extension: .mp4
+[2026-03-29 20:30:18]   Added to queue
+[2026-03-29 20:30:18] _handle_dropped_files: 1 added
+[2026-03-29 20:30:18] _handle_dropped_files END
+[2026-03-29 21:02:34] === Window starting ===
+[2026-03-29 21:02:35] Drag-and-drop hooked successfully
+[2026-03-29 21:03:00] DROP received: 1 file(s)
+[2026-03-29 21:03:00] _handle_dropped_files START: 1 file(s)
+[2026-03-29 21:03:00]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 21:03:00]   Extension: .mp4
+[2026-03-29 21:03:00]   Added to queue
+[2026-03-29 21:03:00] _handle_dropped_files: 1 added
+[2026-03-29 21:03:00] _handle_dropped_files END
+[2026-03-29 21:12:23] === Window starting ===
+[2026-03-29 21:12:24] Drag-and-drop hooked successfully
+[2026-03-29 21:12:38] DROP received: 1 file(s)
+[2026-03-29 21:12:38] _handle_dropped_files START: 1 file(s)
+[2026-03-29 21:12:38]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 21:12:38]   Extension: .mp4
+[2026-03-29 21:12:38]   Added to queue
+[2026-03-29 21:12:38] _handle_dropped_files: 1 added
+[2026-03-29 21:12:38] _handle_dropped_files END
+[2026-03-29 21:21:35] EXE: D:\pythonw.exe
+[2026-03-29 21:21:35] === Window starting ===
+[2026-03-29 21:21:35] EXE: D:\pythonw.exe
+[2026-03-29 21:21:35] Drag-and-drop hooked successfully
+[2026-03-29 21:21:42] EXE: D:\pythonw.exe
+[2026-03-29 21:21:42] DROP received: 1 file(s)
+[2026-03-29 21:21:42] EXE: D:\pythonw.exe
+[2026-03-29 21:21:42] _handle_dropped_files START: 1 file(s)
+[2026-03-29 21:21:42] EXE: D:\pythonw.exe
+[2026-03-29 21:21:42]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 21:21:42] EXE: D:\pythonw.exe
+[2026-03-29 21:21:42]   Extension: .mp4
+[2026-03-29 21:21:42] EXE: D:\pythonw.exe
+[2026-03-29 21:21:42]   Added to queue
+[2026-03-29 21:21:42] EXE: D:\pythonw.exe
+[2026-03-29 21:21:42] _handle_dropped_files: 1 added
+[2026-03-29 21:21:42] EXE: D:\pythonw.exe
+[2026-03-29 21:21:42] _handle_dropped_files END
+[2026-03-29 21:29:21] EXE: D:\pythonw.exe
+[2026-03-29 21:29:21] === Window starting ===
+[2026-03-29 21:29:22] EXE: D:\pythonw.exe
+[2026-03-29 21:29:22] Drag-and-drop hooked successfully
+[2026-03-29 21:29:26] EXE: D:\pythonw.exe
+[2026-03-29 21:29:26] DROP received: 1 file(s)
+[2026-03-29 21:29:26] EXE: D:\pythonw.exe
+[2026-03-29 21:29:26] _handle_dropped_files START: 1 file(s)
+[2026-03-29 21:29:26] EXE: D:\pythonw.exe
+[2026-03-29 21:29:26]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 21:29:26] EXE: D:\pythonw.exe
+[2026-03-29 21:29:26]   Extension: .mp4
+[2026-03-29 21:29:26] EXE: D:\pythonw.exe
+[2026-03-29 21:29:26]   Added to queue
+[2026-03-29 21:29:26] EXE: D:\pythonw.exe
+[2026-03-29 21:29:26] _handle_dropped_files: 1 added
+[2026-03-29 21:29:26] EXE: D:\pythonw.exe
+[2026-03-29 21:29:26] _handle_dropped_files END
+[2026-03-29 21:29:29] EXE: D:\pythonw.exe
+[2026-03-29 21:29:29] DROP received: 1 file(s)
+[2026-03-29 21:29:29] EXE: D:\pythonw.exe
+[2026-03-29 21:29:29] _handle_dropped_files START: 1 file(s)
+[2026-03-29 21:29:29] EXE: D:\pythonw.exe
+[2026-03-29 21:29:29]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 21:29:29] EXE: D:\pythonw.exe
+[2026-03-29 21:29:29]   Extension: .mp4
+[2026-03-29 21:29:29] EXE: D:\pythonw.exe
+[2026-03-29 21:29:29]   Added to queue
+[2026-03-29 21:29:29] EXE: D:\pythonw.exe
+[2026-03-29 21:29:29] _handle_dropped_files: 1 added
+[2026-03-29 21:29:29] EXE: D:\pythonw.exe
+[2026-03-29 21:29:29] _handle_dropped_files END
+[2026-03-29 21:43:46] EXE: D:\pythonw.exe
+[2026-03-29 21:43:46] === Window starting ===
+[2026-03-29 21:43:47] EXE: D:\pythonw.exe
+[2026-03-29 21:43:47] Drag-and-drop hooked successfully
+[2026-03-29 21:43:54] EXE: D:\pythonw.exe
+[2026-03-29 21:43:54] DROP received: 1 file(s)
+[2026-03-29 21:43:54] EXE: D:\pythonw.exe
+[2026-03-29 21:43:54] _handle_dropped_files START: 1 file(s)
+[2026-03-29 21:43:54] EXE: D:\pythonw.exe
+[2026-03-29 21:43:54]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 21:43:54] EXE: D:\pythonw.exe
+[2026-03-29 21:43:54]   Extension: .mp4
+[2026-03-29 21:43:54] EXE: D:\pythonw.exe
+[2026-03-29 21:43:54]   Added to queue
+[2026-03-29 21:43:54] EXE: D:\pythonw.exe
+[2026-03-29 21:43:54] _handle_dropped_files: 1 added
+[2026-03-29 21:43:54] EXE: D:\pythonw.exe
+[2026-03-29 21:43:54] _handle_dropped_files END
+[2026-03-29 21:43:58] EXE: D:\pythonw.exe
+[2026-03-29 21:43:58] DROP received: 1 file(s)
+[2026-03-29 21:43:58] EXE: D:\pythonw.exe
+[2026-03-29 21:43:58] _handle_dropped_files START: 1 file(s)
+[2026-03-29 21:43:58] EXE: D:\pythonw.exe
+[2026-03-29 21:43:58]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 21:43:58] EXE: D:\pythonw.exe
+[2026-03-29 21:43:58]   Extension: .mp4
+[2026-03-29 21:43:58] EXE: D:\pythonw.exe
+[2026-03-29 21:43:58]   Added to queue
+[2026-03-29 21:43:58] EXE: D:\pythonw.exe
+[2026-03-29 21:43:58] _handle_dropped_files: 1 added
+[2026-03-29 21:43:58] EXE: D:\pythonw.exe
+[2026-03-29 21:43:58] _handle_dropped_files END
+[2026-03-29 22:12:20] EXE: D:\pythonw.exe
+[2026-03-29 22:12:20] === Window starting ===
+[2026-03-29 22:12:20] EXE: D:\pythonw.exe
+[2026-03-29 22:12:20] Drag-and-drop hooked successfully
+[2026-03-29 22:12:23] EXE: D:\pythonw.exe
+[2026-03-29 22:12:23] DROP received: 1 file(s)
+[2026-03-29 22:12:23] EXE: D:\pythonw.exe
+[2026-03-29 22:12:23] _handle_dropped_files START: 1 file(s)
+[2026-03-29 22:12:23] EXE: D:\pythonw.exe
+[2026-03-29 22:12:23]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 22:12:23] EXE: D:\pythonw.exe
+[2026-03-29 22:12:23]   Extension: .mp4
+[2026-03-29 22:12:23] EXE: D:\pythonw.exe
+[2026-03-29 22:12:23]   Added to queue
+[2026-03-29 22:12:23] EXE: D:\pythonw.exe
+[2026-03-29 22:12:23] _handle_dropped_files: 1 added
+[2026-03-29 22:12:23] EXE: D:\pythonw.exe
+[2026-03-29 22:12:23] _handle_dropped_files END
+[2026-03-29 22:12:27] EXE: D:\pythonw.exe
+[2026-03-29 22:12:27] INGEST WORKER ERROR:
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\watch_window.pyw", line 466, in ingest_worker
+    result = analyze_media(final_dest)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\analyzer.py", line 91, in analyze_media
+    metadata = _call_gemini_multimodal(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\PROJECTS\video-auto-poster\analyzer.py", line 260, in _call_gemini_multimodal
+    folder = os.path.dirname(output_path)
+                             ^^^^^^^^^^^
+NameError: name 'output_path' is not defined
+
+[2026-03-29 22:41:56] EXE: D:\pythonw.exe
+[2026-03-29 22:41:56] === Window starting ===
+[2026-03-29 22:41:57] EXE: D:\pythonw.exe
+[2026-03-29 22:41:57] Drag-and-drop hooked successfully
+[2026-03-29 22:42:00] EXE: D:\pythonw.exe
+[2026-03-29 22:42:00] DROP received: 1 file(s)
+[2026-03-29 22:42:00] EXE: D:\pythonw.exe
+[2026-03-29 22:42:00] _handle_dropped_files START: 1 file(s)
+[2026-03-29 22:42:00] EXE: D:\pythonw.exe
+[2026-03-29 22:42:00]   Path: C:\Users\Admin\Desktop\Posted\2of10 Hopi Wisdom.mp4
+[2026-03-29 22:42:00] EXE: D:\pythonw.exe
+[2026-03-29 22:42:00]   Extension: .mp4
+[2026-03-29 22:42:00] EXE: D:\pythonw.exe
+[2026-03-29 22:42:00]   Added to queue
+[2026-03-29 22:42:00] EXE: D:\pythonw.exe
+[2026-03-29 22:42:00] _handle_dropped_files: 1 added
+[2026-03-29 22:42:00] EXE: D:\pythonw.exe
+[2026-03-29 22:42:00] _handle_dropped_files END
